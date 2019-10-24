@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>miraa users</title>
+  <link rel="stylesheet" type="text/css" href="mycss.css">
+  <style >
+  #btn{
+    background-color: white;
+    border-radius: 30%;
+    color: red;
+
+
+  </style>
+</head>
+<body>
+  <div class="header">
+  	<h2>Register</h2>
+  </div>
+  <?php include('errors.php'); 
+
+
+  ?>
+	
+  <form method="post" action="server.php" enctype="multipart/form-data">
+  
+  	<div class="input-group">
+  	  <label>Username</label><br>
+  	  <input type="text" name="username" value="">
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label><br>
+  	  <input type="email" name="email" value="">
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label><br>
+  	  <input type="password" name="password_1">
+  	</div>
+  	<div class="input-group">
+  	  <p>Confirm password</p>
+  	  <input type="password" name="password_2">
+
+    </p>
+  	</div>
+  	<div class="input-group">
+      <div class="input-group">
+  <label>phone</label><br>
+  <input type="number" name="telephone" size="4" maxlength="6"   value="<?php echo $telephone; ?>">
+</div>
+profile pic
+<br>
+<input type="file" name="uploadfile" value="default img.png" accept="image/png,.jpeg,.jpg,.image/gif">
+
+
+  	  <button type="submit" id="btn" name="reg_user">Register</button>
+  	</div>
+
+
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
+  </form>
+</body>
+</html>

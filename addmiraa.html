@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>miraa users</title>
+  <link rel="stylesheet" type="text/css" href="mycss.css">
+  <style >
+  #btn{
+    background-color: white;
+    border-radius: 30%;
+    color: red;
+
+
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Add miraa to sell</h2>
+  </div>
+  <?php include('errors.php'); echo "conge"?>
+  
+  <form method="post" action="addmiraa.php" enctype="multipart/form-data">
+  
+    <div class="input-group">
+      <label>category</label><br>
+      <input type="text" name="category" value="">
+    </div>
+    <div class="input-group">
+      <label>description</label><br>
+      <input type="text" name="description" value="">
+    </div>
+    <div class="input-group">
+      <label>Price</label><br>
+      <input type="text" name="price">
+    </div>
+  <label>quantity</label><br>
+      <input type="text" name="quantity">
+    </div> 
+  <br>
+miraa pic
+<br>
+<input type="file" name="uploadfile" value="default img.png" accept="image/png,.jpeg,.jpg,.image/gif" required="required">
+
+
+      <button type="submit" id="btn" name="reg_user">add to sell</button>
+    </div>
+<p>
+      Already a member? <a href="index.php">exit</a>
+    </p>
+  </form>
+</body>
+</html>
